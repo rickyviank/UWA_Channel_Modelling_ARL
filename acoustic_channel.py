@@ -83,7 +83,7 @@ distanceD = findDistance(h,r,d1,d2,0,0)
 print ("lss is: ", round(lss,3))
 
 #iterating function (non-recursive)
-x = 1 
+x = 1
 Tx = np.sin(x)
 Rx = []
 delay = []
