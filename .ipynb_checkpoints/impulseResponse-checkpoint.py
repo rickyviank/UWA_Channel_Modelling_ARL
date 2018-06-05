@@ -55,8 +55,6 @@ tao = 0
 def findTao(distance1, distance2):
 	global tao
 	tao = (distance1 - distance2)/1500 #speed of sound underwater
-	#d = round(tao*10,0) #frequency sampling
-	delay.append(tao)
 	return tao
 
 #def findDelay(tao,distance, distanceD):
@@ -68,6 +66,8 @@ def findBj(Tx,s,b,e):
 	findDistance(h,r,d1,d2,s,b)
 	findAngle(h,r,d1,d2,s,b)
 	findTao(distance, distanceD)
+	d = round(tao*500,0) #frequency sampling
+	delay.append(d)
 	print ("value of s: ", s, "and value of b:", b)
 	print ("Distance for the ", e, "eigen path is: ", round(distance,4))
 	findla(salinity, ft, f, distance)

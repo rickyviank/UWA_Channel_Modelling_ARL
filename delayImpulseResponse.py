@@ -1,12 +1,9 @@
 import scipy as sp
 import matplotlib.pyplot as plt
 import numpy as np
-
-#all inputs
-h,r,d1,d2 = input("Channel Characteristics: Height, Range, d1 and d2 (meters): ").split()
-h,r,d1,d2 = [int(h),int(r),int(d1),int(d2)]
-f = int(input("Frequency of Transmitter (kHz): "))
-eigen = int(input("Number of eigenpath: "))
+h,r,d1,d2 = [100,100,7,5]
+f = 10
+eigen = 10
 
 #concerned variables
 distance, lss, la, lb, angle = [0,0,0,0,0]
